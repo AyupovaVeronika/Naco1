@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:gravity="center_vertical"
+    android:background="?android:attr/selectableItemBackground">
+
+    <!-- Иконка слоя -->
+    <ImageView
+        android:id="@+id/layer_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@android:drawable/ic_menu_crop"
+        app:tint="#FFFFFF" />
+
+    <!-- Название слоя -->
+    <TextView
+        android:id="@+id/layer_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="12dp"
+        android:text="Слой"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
+
+    <!-- Drag handle (для перетаскивания) -->
+    <ImageView
+        android:id="@+id/drag_handle"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@android:drawable/ic_menu_sort_by_size"
+        android:visibility="gone"
+        app:tint="#FFFFFF" />
+
+    <!-- Кнопка видимости -->
+    <ImageButton
+        android:id="@+id/layer_visibility"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@android:drawable/ic_menu_view"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        app:tint="#FFFFFF" />
+
+    <!-- Кнопка блокировки -->
+    <ImageButton
+        android:id="@+id/layer_lock"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/ic_lock_open"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        app:tint="#FFFFFF" />
+
+</LinearLayout>

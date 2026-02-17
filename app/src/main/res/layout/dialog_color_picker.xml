@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@android:color/white"
+    android:elevation="8dp"
+    android:minWidth="300dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Выберите цвет"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Превью цвета -->
+    <View
+        android:id="@+id/color_preview"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#0000FF"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Red -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Красный"
+        android:textSize="14sp"
+        android:textColor="#666"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <SeekBar
+            android:id="@+id/red_seekbar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="255"
+            android:progress="0"/>
+
+        <TextView
+            android:id="@+id/red_value"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="#F00"/>
+    </LinearLayout>
+
+    <!-- Green -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Зеленый"
+        android:textSize="14sp"
+        android:textColor="#666"
+        android:layout_marginTop="12dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <SeekBar
+            android:id="@+id/green_seekbar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="255"
+            android:progress="0"/>
+
+        <TextView
+            android:id="@+id/green_value"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="#0F0"/>
+    </LinearLayout>
+
+    <!-- Blue -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Синий"
+        android:textSize="14sp"
+        android:textColor="#666"
+        android:layout_marginTop="12dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <SeekBar
+            android:id="@+id/blue_seekbar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="255"
+            android:progress="0"/>
+
+        <TextView
+            android:id="@+id/blue_value"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="#00F"/>
+    </LinearLayout>
+
+    <!-- HEX значение -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="24dp"
+        android:padding="12dp"
+        android:background="#F0F0F0">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HEX: "
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/hex_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="#000000"
+            android:textSize="16sp"
+            android:typeface="monospace"/>
+    </LinearLayout>
+
+    <!-- Кнопки -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Отмена"
+            style="@style/Widget.AppCompat.Button.Borderless"/>
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ОК"
+            android:layout_marginStart="8dp"
+            style="@style/Widget.AppCompat.Button.Borderless"/>
+    </LinearLayout>
+
+</LinearLayout>
